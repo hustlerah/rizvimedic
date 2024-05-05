@@ -1,0 +1,155 @@
+.myheader{
+	background: url(../public/assets/images/header-bg.png);
+    background-size: cover;
+	background-position: center;
+    /* background-position: center; */
+	z-index: 2;
+	height: 70px;
+	width: 100%;
+}
+.bg-active{
+	position: fixed;
+	width: 100%;
+}
+.myheader.mybg{
+	position: fixed;
+	width: 100% ;
+}
+.nava{
+	flex-wrap: wrap;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mynav ul li.active a:after {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);}
+.mynav ul li:hover a:after {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.mynav ul li{
+    list-style: none;
+	display: inline-block;
+	margin-right: 45px !important;
+	position: relative;
+}
+.mynav ul li a{
+    font-size: 18px;
+	color: var(--text-color);
+	display: block;
+	font-weight: 400;
+	position: relative;
+	padding: 3px 0;
+}
+
+.mynav .container{
+	display: none !important;
+}
+.mynav ul li a:hover{
+	color: var(--COLOR_UI_PHARMACY);
+}
+@media(max-width:992px){
+	.myheader {
+        
+		padding: 10px 4px;
+	}
+	.myheader.active .mynav{
+		left: 0;
+	}
+	.myheader.active .menu-overlay{
+		display: block;
+		/* visibility: visible; */
+		opacity: 1;
+	}
+	.mynav .container{
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin: 0;
+	}
+	.menu-overlay{
+		display: none;
+		opacity: 0;
+		position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    z-index: 99;
+    -webkit-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+    /* visibility: hidden */
+	}
+	.myheader .df{
+		flex-direction: row-reverse;
+	}
+	.mynav
+	{
+		transition: all .3s;
+		/* transform: translateX(-100%); */
+		overflow-x: hidden !important;
+		z-index: 9999;
+		padding-top: 20px;
+		position: fixed;
+		top: 0;
+		width: 300px;
+		left: -120%;
+		right: 0;
+		min-height: 100vh;
+		bottom: 0;
+		background-color: #ffffff;
+		overflow-y: auto;
+		height: 100%;
+	}
+	.mynav ul{
+		display: flex;
+		flex-direction: column;
+	}
+    .mynav .nav-item {margin-left: 0 !important;}
+	.mynav ul a{
+        
+		font-style: 15px;
+	}
+	.mynav ul li a::after{
+		position: relative;
+	}
+}
+@media(max-width:992px){
+	.icon-box{
+		display: flex !important;
+	}
+}
+@media(max-width:425px){
+	.navbar-brand img{
+		/* display: none; */
+		width: 130px !important;
+	}
+	
+}
+@media(max-width:340px){
+	.mynav{
+		width: 80%;
+	}
+	
+}
+.icon-box{
+	cursor: pointer;
+}
+.myheader h1{
+    font-size: 25px;
+    margin-top: 15px;
+    color: var(--text-color);
+    margin-left: 5px;
+}
+.nav-item.active  a{
+	color: var(--COLOR_UI_PHARMACY);
+}

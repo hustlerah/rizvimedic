@@ -1,0 +1,112 @@
+.Hero{
+    background-image: url(../public//assets/images/hero-bg.png);
+    background-size: cover;
+    min-height: 80vh;
+    /* padding-top: 80px; */
+    background-position:  center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+.Hero h2{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.underline-text {
+    position: relative;
+    display: block;
+    /* margin-left: 10px; */
+}
+.underline-text h3{
+    font-size: 33px;
+}
+.underline-text::after {
+    border-radius: 20px;
+    content: "";
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* width: 100%; */
+    height: 6px; /* Set the height of the underline */
+    background-color: #D79C2F; /* Set the color of the underline */
+  }
+.underline-text1 {
+    position: relative;
+    display: block;
+    /* margin-left: 10px; */
+}
+.underline-text1 h3{
+    font-size: 33px;
+}
+.underline-text1::after {
+    border-radius: 20px;
+    content: "";
+    width: 60%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* width: 100%; */
+    height: 6px; /* Set the height of the underline */
+    background-color: #824DD1; /* Set the color of the underline */
+  }
+.underline-text2 {
+    position: relative;
+    display: block;
+    /* margin-left: 10px; */
+}
+.underline-text2 h3{
+    font-size: 33px;
+}
+.underline-text2::after {
+    border-radius: 20px;
+    content: "";
+    width: 60%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* width: 100%; */
+    height: 6px; /* Set the height of the underline */
+    background-color: #006275; /* Set the color of the underline */
+  }
+  .Hero .heroc{
+    position: relative;
+    display: block !important;
+  }
+  .heroc span{
+    font-size: 15px;
+  }
+  @media (max-width:1200px){
+    .Hero h2{
+        font-size: 45px;
+    }
+    .Hero .heroc span{
+        font-size: 13px;
+    }
+  }
+  @media (max-width:991px){
+    .Hero{
+        background-position:  initial;
+    }
+    .Hero h2{
+        font-size: 34px;
+    }
+    .Hero .hero-img{
+        margin-top: 40px;
+    }
+    .Hero .heroc span{
+        font-size: 13px;
+    }
+    
+}
+@media (max-width:764px){
+    .hero-after{
+        flex-direction: column;
+    }
+    .underline-text::after,
+    .underline-text1::after,
+    .underline-text2::after{
+        width: 20%;
+    }
+
+}

@@ -1,0 +1,40 @@
+.Works{
+    padding-top: 95px;
+    padding-bottom: 50px;
+}
+.Works h2{
+    font-size: 42px;
+    width: 400px;
+    font-weight: bold;
+}
+.Works .df{
+    margin: 0 auto;
+    text-align: center;
+    /* flex-direction: column; */
+}
+.Works .crc{
+    border: 1px solid var(--text-color);
+    padding: 15px;
+    border-radius: 25px;
+    width: 50px;
+    cursor: pointer;
+}
+.Works .crc:hover{
+    background-color: var( --COLOR_UI_PHARMACY);
+}
+.Works .crc:hover .ica{
+    color: #fff;
+    
+}
+.Works h4{
+    font-weight: bold;
+}
+.Works .row p{
+    font-size: 14px;
+}
+@media (max-width:600px){
+    .Works h2{
+        width: 100%;
+        font-size: 35px;
+    }
+}

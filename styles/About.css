@@ -1,0 +1,41 @@
+.About {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.About .about-img {
+    position: relative;
+    /* Remove overflow: hidden; */
+}
+
+.About .abt-img {
+    position: absolute;
+    bottom: 0; /* Adjust this value as needed */
+    right: 0; /* Adjust this value as needed */
+}
+.About .ad{
+    flex-direction: column;
+}
+.About .i1{
+    height: 350px;
+}
+.About h2{
+    font-weight: bold;
+}
+@media (max-width:764px){
+    .About .i1{
+        margin-top: 30px;
+        height: 100%;
+        width: 80%;
+    }
+    .About .abt-img{
+        right: -7%;
+    }
+    .About .abt-img{
+        width: 80%;
+    }
+    .About .row{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+}

@@ -1,0 +1,34 @@
+.Services{
+    padding-top: 60px;
+    min-height: 80vh;
+}
+.Services h2{
+    font-weight: bold;
+    font-size: 34px;
+}
+.Services p{
+    font-size: 15px;
+}
+.Services .crc{
+    border: 1px solid var(--text-color);
+    padding: 10px;
+    border-radius: 25px;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.Services .crc:hover{
+    background-color: var( --COLOR_UI_PHARMACY);
+}
+.Services .crc:hover .ica{
+    color: #fff;
+    
+}
+.Services .row .df{
+    justify-content: space-between !important;
+    /* margin-left: 10px; */
+    margin-right: 35px;
+}
+.Services .df .num{
+    padding: 5px 10px;
+}
